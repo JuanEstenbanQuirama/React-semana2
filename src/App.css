@@ -1,38 +1,95 @@
 .App {
   text-align: center;
+  padding-top: 20px;
+  background-image: url(https://static.diariofemenino.com/uploads/psicologia/218851-sonar-nubes.jpg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, .3);
+  padding: 20px;
+  margin: 0 auto;
+  background-color: white;
+  opacity: .9;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.container-weather{
+  display: flex;
+  justify-content: center;
+  border-top: 3px solid lightskyblue;
+  border-bottom: 3px solid lightskyblue;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+img{
+  width: 200px;
+}
+
+button{
+  margin-top: 30px;
+  justify-content: center;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: lightskyblue;
+  font-weight: bold;
+  color: blueviolet;
+}
+button:hover{
+  background-color: blueviolet;
+  color: lightskyblue;
+  transition: all 0s ease-in;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, .3);
+  cursor: pointer;
+}
+
+.container-info{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  margin-left: 80px;
+  padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+h3{
+  color: blueviolet;  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.info-element{
+  display: inline;
+  font-size: 18px;
+  color: lightskyblue;
+}
+
+h2, small{
+  color: blueviolet;
+}
+
+h1{
+  color: blueviolet;
+}
+
+span{
+  color: lightskyblue;
+}
+
+.weatherInfo{
+  align-self: center;
+}
+
+footer{
+
+  width: 100%;
+  height: 25px;
+  background: white;
+  margin-top: 30px;
+  padding: 10px 0;
+  opacity: .7;
+  font-weight: bold;
+  color: blueviolet;
 }
